@@ -1,0 +1,9 @@
+.dashboard {
+  &-flex {
+    display: flex;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
