@@ -1,9 +1,9 @@
 {
-  "name": "webpack-react-starter",
+  "name": "invoice",
   "version": "1.0.0",
-  "description": "webpack react starter project with sass",
+  "description": "invoicing software",
   "main": "src/index.js",
-  "repository": "https://github.com/ijoshuadaniel/webpack-starter.git",
+  "repository": "https://github.com/ijoshuadaniel/invoice.git",
   "author": "Daniel Paul Joshuah",
   "license": "MIT",
   "scripts": {
