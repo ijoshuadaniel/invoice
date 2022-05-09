@@ -1,0 +1,27 @@
+.dashboard {
+  overflow-y: auto;
+  overflow-x: hidden;
+  &-flex {
+    display: flex;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.charts {
+  width: 100vw;
+}
+
+g rect:first-child {
+  fill: var(--hover) !important;
+  color: var(--color) !important;
+}
+
+.chart-candle {
+  rect {
+    fill: var(--hover) !important;
+    color: var(--color) !important;
+  }
+}

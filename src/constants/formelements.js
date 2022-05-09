@@ -1,0 +1,31 @@
+export const inputTypes = {
+  search: 'search',
+  text: 'text',
+  password: 'password',
+  email: 'email',
+  number: 'number',
+  date: 'date',
+  time: 'time',
+  datetime: 'datetime',
+  datetimeLocal: 'datetime-local',
+  month: 'month',
+  week: 'week',
+  color: 'color',
+  range: 'range',
+  checkbox: 'checkbox',
+  radio: 'radio',
+  file: 'file',
+  submit: 'submit',
+  reset: 'reset',
+  button: 'button',
+  switch: 'switch',
+};
+
+export const sideBarItems = {
+  dashboard: 'Dashboard',
+  customers: 'Customers',
+  addCustomers: 'Add Customers',
+  customersList: 'Customers List',
+  companies: 'Companies',
+  transactions: 'Transactions',
+};
