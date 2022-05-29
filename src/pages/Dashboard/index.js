@@ -3,6 +3,7 @@ import { Card } from '../../elements';
 import { Chart } from 'react-google-charts';
 import { dashboardList, iconStyles } from './dashboard';
 import './index.scss';
+import CTables from '../../elements/table';
 
 export const data = [
   ['day', 'a', 'b', 'c', 'd'],
@@ -25,6 +26,92 @@ export const options = {
     textStyle: { color: '#FFF' },
   },
 };
+
+const columns = [
+  {
+    name: 'Id',
+    selector: (row) => row.id,
+  },
+  {
+    name: 'Date',
+    selector: (row) => row.date,
+  },
+  {
+    name: 'Invoice Number',
+    selector: (row) => row.invoiceNo,
+  },
+  {
+    name: 'Name',
+    selector: (row) => row.name,
+  },
+  {
+    name: 'Amount',
+    selector: (row) => row.amount,
+  },
+  {
+    name: 'Status',
+    selector: (row) => row.invoiceNo,
+  },
+];
+
+const datas = [
+  {
+    id: 1,
+    date: '01/01/2019',
+    invoiceNo: 'INV-001',
+    name: 'John Doe',
+    amount: '$100',
+    status: 'Paid',
+  },
+  {
+    id: 2,
+    date: '01/01/2019',
+    invoiceNo: 'INV-002',
+    name: 'John Doe',
+    amount: '$100',
+    status: 'Paid',
+  },
+  {
+    id: 3,
+    date: '01/01/2019',
+    invoiceNo: 'INV-002',
+    name: 'John Doe',
+    amount: '$100',
+    status: 'Paid',
+  },
+  {
+    id: 3,
+    date: '01/01/2019',
+    invoiceNo: 'INV-002',
+    name: 'John Doe',
+    amount: '$100',
+    status: 'Paid',
+  },
+  {
+    id: 3,
+    date: '01/01/2019',
+    invoiceNo: 'INV-002',
+    name: 'John Doe',
+    amount: '$100',
+    status: 'Paid',
+  },
+  {
+    id: 3,
+    date: '01/01/2019',
+    invoiceNo: 'INV-002',
+    name: 'John Doe',
+    amount: '$100',
+    status: 'Paid',
+  },
+  {
+    id: 3,
+    date: '01/01/2019',
+    invoiceNo: 'INV-002',
+    name: 'John Doe',
+    amount: '$100',
+    status: 'Paid',
+  },
+];
 const Dashboard = () => {
   return (
     <div className='dashboard'>
@@ -70,6 +157,14 @@ const Dashboard = () => {
               options={options}
               style={{ fill: 'green' }}
             />
+          </Card>
+        </div>
+        <div className='dashboard-list' style={{ marginTop: '1rem' }}>
+          <Card style={{ width: '39.5vw', marginRight: '1.5rem' }}>
+            <CTables columns={columns} data={datas} pagination={false} />
+          </Card>
+          <Card style={{ width: '39.5vw' }}>
+            <CTables columns={columns} data={datas} pagination={false} />
           </Card>
         </div>
       </div>

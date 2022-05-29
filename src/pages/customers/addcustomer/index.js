@@ -22,6 +22,8 @@ const AddCustomer = () => {
                     mandatory={field.mandatory}
                   />
                 );
+              } else {
+                return null;
               }
             })}
           </div>
@@ -37,6 +39,8 @@ const AddCustomer = () => {
                     mandatory={field.mandatory}
                   />
                 );
+              } else {
+                return null;
               }
             })}
           </div>

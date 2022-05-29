@@ -1,0 +1,10 @@
+.rdt_TableHeadRow,
+.rdt_TableBody,
+.rdt_Pagination,
+svg,
+.rdt_TableRow {
+  background-color: var(--hover) !important;
+  color: var(--color) !important;
+  border-bottom-color: var(--color) !important;
+  fill: var(--color) !important;
+}

@@ -14,7 +14,10 @@ const NavigationContainer = ({ page, sub }) => {
           return <AddCustomer />;
         case sideBarItems.customersList:
           return <CustomerList />;
+        default:
+          break;
       }
+      break;
     case sideBarItems.companies:
       return <Companies />;
     default:
